@@ -8,7 +8,7 @@ current_sentence_id = 0
 current_sentence = []
 
 # Set file path for the concatenated file
-fd = 'output/joyce2003.complete'
+fd = open('output/joyce2003.complete')
 line = fd.readline()
 
 # Default number of supersense tags

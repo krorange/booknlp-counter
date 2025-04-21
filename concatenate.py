@@ -6,7 +6,7 @@ dictionary = {}
 #7	7	noun.location	WORLD
 
 first = True
-for line in open('/FILEPATH/FILENAME.supersense').read().split('\n'):
+for line in open('joyce2003.supersense').read().split('\n'):
 	if line.strip() == '':
 		continue
 	if first:
@@ -26,7 +26,7 @@ for line in open('/FILEPATH/FILENAME.supersense').read().split('\n'):
 #1	0	0	0	*	*	3	4	PUNCT	NFP	meta	4	O
 
 first = True
-for token in open('/FILEPATH/FILENAME.tokens').read().split('\n'):
+for token in open('joyce2003.tokens').read().split('\n'):
 	if token.strip() == '':
 		continue
 	if first:

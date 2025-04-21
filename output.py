@@ -16,11 +16,6 @@ num_ani = 0
 num_pla = 0
 num_hum = 0
 
-# Default sum of supersense tags
-sum_ani = 0
-sum_pla = 0
-sum_hum = 0
-
 while line:
 	if first:
 		first = False
@@ -35,15 +30,14 @@ while line:
 			if lemma in ['noun.animal'] and dep in ['nsubj']:
 				#print(current_sentence_id,':::',' '.join([i[4] for i in current_sentence]))
 				num_ani += 1
-				sum_ani = str(num_ani)
+				break
 			if lemma in ['noun.plant'] and dep in ['nsubj']:
 				#print(current_sentence_id,';;;',' '.join([i[4] for i in current_sentence]))
 				num_pla += 1
-				sum_pla = str(num_ani)
+				break
 			if lemma in ['noun.person'] and dep in ['nsubj']:
 				#print(current_sentence_id,'!!!',' '.join([i[4] for i in current_sentence]))
 				num_hum += 1
-				sum_hum = str(num_ani)
 				break
 		current_sentence_id = int(row[1])
 		current_sentence = []
@@ -52,6 +46,6 @@ while line:
 		
 	line = fd.readline()
 
-print(sum_ani)
-print(sum_pla)
-print(sum_hum)
+print("Animal counts:", num_ani)
+print("Plant counts:", num_pla)
+print("Human counts:", num_hum)

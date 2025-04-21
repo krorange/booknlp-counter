@@ -8,7 +8,7 @@ current_sentence_id = 0
 current_sentence = []
 
 # Set file path
-fd = '/media/secure_volume/output/abbey1975.complete'
+fd = '/FILEPATH/FILENAME.complete'
 line = fd.readline()
 
 # Default number of supersense tags

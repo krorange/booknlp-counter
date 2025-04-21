@@ -10,10 +10,10 @@ model_params={
 booknlp=BookNLP("en", model_params)
 
 # Input file to process
-input_file="/media/secure_volume/output/FILENAME.txt"
+input_file="/FILEPATH/FILENAME.txt"
 
 # Output directory to store resulting files in
-output_directory="/media/secure_volume/output"
+output_directory="/FILEPATH/output"
 
 # File within this directory will be named ${book_id}.entities, ${book_id}.tokens, etc.
 book_id="AUTHOR&YEAR"

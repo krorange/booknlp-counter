@@ -6,12 +6,17 @@
 first = True
 current_sentence_id = 0
 current_sentence = []
-fd = open('/media/secure_volume/supersense/FILENAME.complete')
+
+# Set file path
+fd = '/media/secure_volume/output/abbey1975.complete'
 line = fd.readline()
 
+# Default number of supersense tags
 num_ani = 0
 num_pla = 0
 num_hum = 0
+
+# Default sum of supersense tags
 sum_ani = 0
 sum_pla = 0
 sum_hum = 0
@@ -22,7 +27,8 @@ while line:
 		line = fd.readline()
 	row = line.strip().split('\t')
 
-	if int(row[1]) != current_sentence_id:
+	sentence_id = int(row[1])
+	if sentence_id != current_sentence_id:
 		for sentence_row in current_sentence:
 			#print(sentence_row)
 			if sentence_row[13] in ['noun.animal'] and sentence_row[10] in ['nsubj']:

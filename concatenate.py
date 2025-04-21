@@ -3,7 +3,7 @@
 dictionary = {}
 
 #start_token	end_token	supersense_category	text
-#7	7	noun.location	WORLD
+#2	2	noun.communication	Illustration
 
 first = True
 for line in open('output/joyce2003.supersense').read().split('\n'):

@@ -1,7 +1,7 @@
 # This is a program that outputs the number of animal/plant/human subjects (nsubj)
 
 #paragraph_ID	sentence_ID	token_ID_within_sentence	token_ID_within_document	word	lemma	byte_onset	byte_offset	POS_tag	fine_POS_tag	dependency_relation	syntactic_head_ID	event	supersense_category
-#1	0	0	0	*	*	3	4	PUNCT	NFP	meta	4	O	_
+#1	0	2	2	Illustration	illustration	4	16	NOUN	NN	nmod	4	O	noun.communication
 
 first = True
 current_sentence_id = 0

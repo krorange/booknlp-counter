@@ -31,7 +31,7 @@ while line:
 	if sentence_id != current_sentence_id:
 		for sentence_row in current_sentence:
 			lemma = sentence_row[13].lower()
-            		dep = sentence_row[10]
+			dep = sentence_row[10]
 			if lemma in ['noun.animal'] and dep in ['nsubj']:
 				#print(current_sentence_id,':::',' '.join([i[4] for i in current_sentence]))
 				num_ani += 1

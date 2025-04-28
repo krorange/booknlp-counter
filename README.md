@@ -1,6 +1,6 @@
 # booknlp-counter
 
-This module is a python library that provides a way of searching for sentences in text annotated by [BookNLP](https://github.com/booknlp/booknlp). BookNLP is a set of tools for running natural language processing (NLP) on literary texts that annotates them according to linguistic features such as lemma, part-of-speech, syntactic function (e.g. subject, object) and semantic categorisation (e.g. animal, cognition, body). The module allows you to search for any combination of the above features and outputs and counts the matched sentences.
+This module is a python library that provides a way of searching for sentences in text annotated by [BookNLP](https://github.com/booknlp/booknlp). BookNLP is a set of tools for running natural language processing (NLP) on literary texts that annotates them according to linguistic features such as lemma, part-of-speech, syntactic function (e.g. subject, object) and semantic categorization (e.g. animal, cognition, body). The module allows you to search for any combination of the above features and outputs and counts the matched sentences.
 
 ## Worked example
 <!-- give an example sentence, a short one, where you can see the value of the annotation: e.g. with animal subject --> 
@@ -53,9 +53,9 @@ paragraph_ID	sentence_ID	token_ID_within_sentence	token_ID_within_document	word	
 
 # Usage instructions
 
-1. Run `tagger.py`. This runs only some elements (entity and supersense) of the pipeline. The original script can be found at https://github.com/booknlp/booknlp/blob/main/examples/run_booknlp.py
-2. Run `concatenate.py > output/joyce2003.complete`. This concatenates the some files (.tokens and .supersense) from the BookNLP output. You can replace the output directory.
-3. Run `output.py`. This outputs
+1. Run `tagger.py`. This runs only some elements (entity and supersense) of the BookNLP pipeline. The original script can be found at https://github.com/booknlp/booknlp/blob/main/examples/run_booknlp.py
+2. Run `concatenate.py > output/joyce2003.complete`. This concatenates some files (`.tokens` and `.supersense`) from the BookNLP output. You can replace the output directory but make sure to keep the file extension (`.complete`).
+3. Run `output.py`. This outputs and counts the matched sentences according to any combination of linguistic features and semantic categorization.
 
 # Acknowledgements
 

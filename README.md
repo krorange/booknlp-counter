@@ -4,7 +4,9 @@ This module is a python library that provides a way of searching for sentences i
 
 ## Worked example
 <!-- give an example sentence, a short one, where you can see the value of the annotation: e.g. with animal subject --> 
-- Input:
+In this worked example, we see two sentences from James Joyce's _Ulysses_. One with noun.animal as subject and the other with noun.person as subject. We are able to extract only the sentences that have specific supersense (e.g., `noun.animal` and syntactic function of `nsubj` -- subject).
+
+### Input:
 ```
 paragraph_ID	sentence_ID	token_ID_within_sentence	token_ID_within_document	word	lemma	byte_onset	byte_offset	POS_tag	fine_POS_tag	dependency_relation	syntactic_head_ID	event	supersense_category  
 695	1938	0	22043	The	the	99219	99222	DET	DT	det	22044	O	_  
@@ -43,7 +45,7 @@ paragraph_ID	sentence_ID	token_ID_within_sentence	token_ID_within_document	word	
 697	1939	17	22075	fire	fire	99348	99352	NOUN	NN	pobj	22073	O	_
 697	1939	18	22076	.	.	99352	99353	PUNCT	.	punct	22070	O	_
 ```
-- Output:
+### Output:
 ```
 1938 ::: The cat walked stiffly round a leg of the table with tail on high .  
 1939 !!! — Mkgnao ! — O , there you are , Mr Bloom said , turning from the fire .

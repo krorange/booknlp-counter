@@ -25,18 +25,18 @@ def entity_counter():
 		sentence_id = int(row[1])
 		if sentence_id != current_sentence_id:
 			for sentence_row in current_sentence:
-				lemma = sentence_row[13].lower()
+				supersense = sentence_row[13].lower()
 				dep = sentence_row[10]
-				if lemma in ['noun.animal'] and dep in ['nsubj']:
+				if supersense in ['noun.animal'] and dep in ['nsubj']:
 					print(current_sentence_id, ':::',' '.join([i[4] for i in current_sentence]))
 					num_ani += 1
 					break
-				if lemma in ['noun.plant'] and dep in ['nsubj']:
+				if supersense in ['noun.plant'] and dep in ['nsubj']:
 					#print(current_sentence_id,';;;',' '.join([i[4] for i in current_sentence]))
 					num_pla += 1
 					break
-				if lemma in ['noun.person'] and dep in ['nsubj']:
-					#print(current_sentence_id,'!!!',' '.join([i[4] for i in current_sentence]))
+				if supersense in ['noun.person'] and dep in ['nsubj']:
+					print(current_sentence_id,'!!!',' '.join([i[4] for i in current_sentence]))
 					num_hum += 1
 					break
 			current_sentence_id = int(row[1])

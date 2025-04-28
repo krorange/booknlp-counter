@@ -12,7 +12,7 @@ syntactic function (e.g. subject, object) and semantic categorisation (e.g. anim
 
 ## Worked example
 <!-- give an example sentence, a short one, where you can see the value of the annotation: e.g. with animal subject --> 
-- Input:
+- Input:  
 paragraph_ID	sentence_ID	token_ID_within_sentence	token_ID_within_document	word	lemma	byte_onset	byte_offset	POS_tag	fine_POS_tag	dependency_relation	syntactic_head_ID	event	supersense_category
 695	1938	0	22043	The	the	99219	99222	DET	DT	det	22044	O	_
 695	1938	1	22044	cat	cat	99223	99226	NOUN	NN	nsubj	22045	O	noun.animal
@@ -30,7 +30,7 @@ paragraph_ID	sentence_ID	token_ID_within_sentence	token_ID_within_document	word	
 695	1938	13	22056	high	high	99280	99284	ADJ	JJ	pobj	22055	O	_
 695	1938	14	22057	.	.	99284	99285	PUNCT	.	punct	22045	O	_
 
-- Output:
+- Output:  
 1938 ::: The cat walked stiffly round a leg of the table with tail on high .
 
 # Usage instructions

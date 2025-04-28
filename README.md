@@ -4,7 +4,7 @@ This module is a python library that provides a way of searching for sentences i
 
 ## Worked example
 <!-- give an example sentence, a short one, where you can see the value of the annotation: e.g. with animal subject --> 
-In this worked example, we see two sentences from James Joyce's _Ulysses_. One with noun.animal as subject and the other with noun.person as subject. We are able to extract only the sentences that have specific supersense (e.g., `noun.animal` and syntactic function of `nsubj` -- subject).
+In this worked example, we see two sentences from James Joyce's _Ulysses_. One with `noun.animal` as subject and the other with `noun.person` as subject. We are able to extract only the sentences that have specific supersense (e.g., `noun.animal` and syntactic function of `nsubj` -- subject).
 
 ### Input:
 ```

@@ -28,7 +28,7 @@ def entity_counter():
 				lemma = sentence_row[13].lower()
 				dep = sentence_row[10]
 				if lemma in ['noun.animal'] and dep in ['nsubj']:
-					#print(current_sentence_id,':::',' '.join([i[4] for i in current_sentence]))
+					print(current_sentence_id, ':::',' '.join([i[4] for i in current_sentence]))
 					num_ani += 1
 					break
 				if lemma in ['noun.plant'] and dep in ['nsubj']:
@@ -41,14 +41,12 @@ def entity_counter():
 					break
 			current_sentence_id = int(row[1])
 			current_sentence = []
-		else:	
-			current_sentence.append(row)
-			
+		current_sentence.append(row)		
 		line = fd.readline()
-
-	print("Animal counts:", num_ani)
-	print("Plant counts:", num_pla)
-	print("Human counts:", num_hum)
+	
+	#print("Animal counts:", num_ani)
+	#print("Plant counts:", num_pla)
+	#print("Human counts:", num_hum)
 
 if __name__ == "__main__":
 	entity_counter()

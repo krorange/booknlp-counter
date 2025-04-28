@@ -7,7 +7,7 @@ The BookNLP output is formatted in a tab separated file:
 
 There are different types of supersense categories: e.g., "animal", "artifact", "body", "cognition", etc.
 
-This module is a python library that provides a way of searching for sentences in text annotated by [BookNLP](). BookNLP is a set of tools for 
+This module is a python library that provides a way of searching for sentences in text annotated by [BookNLP](https://github.com/booknlp/booknlp). BookNLP is a set of tools for 
 running natural language processing (NLP) on literary texts that annotates them according to linguistic features such as lemma, part-of-speech,
 syntactic function (e.g. subject, object) and semantic categorisation (e.g. animal, cognition, body). The module allows you to search for any combination of the above features and outputs and counts the matched sentences.
 
